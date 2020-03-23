@@ -1,0 +1,46 @@
+@import './_reset.sass'
+@import './_vars.sass'
+@import './_init.sass'
+body
+    background: $light
+
+.pairing
+    @extend .pairing-content
+    margin-top: 5rem
+    background-color: #fff
+    padding: 2rem
+
+.title
+    text-align: center
+    border-bottom: 1px solid $light
+    padding-bottom: 1rem
+    margin-bottom: 1rem
+    h1
+        font-size: 22px
+        font-weight: bold
+        line-height: 2
+    h2
+        font-size: 16px
+        font-weight: bold
+        color: #666
+
+.box
+    display: flex
+    align-item: center
+    justify-center: center
+    border: 1px solid $gray
+    background-color: $light
+    padding: 0 1rem
+    margin-bottom: 1rem
+    & > div
+            flex: 1
+            line-height: 40px
+
+.mySelect
+    .el-input
+        &__inner::-webkit-input-placeholder
+            color: #333
+.el-select.mySelect 
+    .el-input 
+        .el-select__caret
+            color: #333
